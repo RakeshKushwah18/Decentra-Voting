@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DecentraVote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🗳 DecentraVote</h1>
+    <button onclick="connectWallet()">Connect Wallet</button>
+
+    <h2>Vote</h2>
+    <button onclick="vote(1)">Vote Candidate A</button>
+    <button onclick="vote(2)">Vote Candidate B</button>
+
+    <h2>Results</h2>
+    <button onclick="loadResults()">Show Results</button>
+    <p id="result"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="js/web3.js"></script>
+  </body>
+</html>
